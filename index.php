@@ -10,7 +10,7 @@
 <body>
     
 <div id="app">
-<h1>ciao</h1>
+    <h1>ciao</h1>
 </div>
 
 
