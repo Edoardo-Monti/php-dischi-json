@@ -1,0 +1,21 @@
+.w-50, .vh-100{
+    background-color: rgb(76, 69, 69);
+}
+
+.card{
+    background-color: rgb(55, 65, 83);
+}
+
+img{
+    padding: 25px;
+}
+
+.card-title{
+    font-size: 19px;
+    font-style: italic;
+    color: white;
+}
+.card-text{
+    font-size: 13px;
+    color: white;
+}
