@@ -15,9 +15,9 @@
 
     <div id="app">
         <div class="vh-100 d-flex align-items-center justify-content-between">
-            <div class="w-50 mx-auto d-flex justify-content-between flex-wrap  gap-3">
+            <div class="w-50 mx-auto d-flex justify-content-around flex-wrap  gap-3">
                 <div class="card col-3" v-for="(elem,index) in array" :key="index">
-                    <img :src="elem.poster" class="card-img-top" alt="...">
+                    <img :src="elem.poster" class="card-img-top" alt="copertina">
                     <div class="card-body text-center">
                         <h3 class="card-title">{{elem.title}}</h3>
                         <p class="card-text">{{elem.genre}}</p>
