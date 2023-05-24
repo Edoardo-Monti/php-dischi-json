@@ -5,7 +5,7 @@ const { createApp } = Vue
       return {
         apiDischi: 'server.php',
         array: '',
-
+        indiceCard: 0,
       }
     },
     methods:{

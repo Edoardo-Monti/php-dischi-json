@@ -15,17 +15,48 @@
 
     <div id="app">
         <div class="vh-100 d-flex align-items-center justify-content-between">
-            <div class="w-50 mx-auto d-flex justify-content-around flex-wrap  gap-3">
-                <div class="card col-3" v-for="(elem,index) in array" :key="index">
-                    <img :src="elem.poster" class="card-img-top" alt="copertina">
-                    <div class="card-body text-center">
-                        <h3 class="card-title">{{elem.title}}</h3>
-                        <p class="card-text">{{elem.genre}}</p>
-                        <h5 class="card-title">{{elem.year}}</h5>
+            <div class="w-50 mx-auto">
+                <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    class="d-flex justify-content-around flex-wrap  gap-3">
+                    <div class="card col-3" v-for="(elem,index) in array" :key="index" @click="indiceCard = index">
+                        <img :src="elem.poster" class="card-img-top" alt="copertina">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">{{elem.title}}</h3>
+                            <p class="card-text">{{elem.genre}}</p>
+                            <h5 class="card-title">{{elem.year}}</h5>
+                        </div>
+                        <div v-show="index == indiceCard" class="modal fade" id="staticBackdrop"
+                            data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card col-3">
+                                            <img :src="elem.poster" class="card-img-top" alt="copertina">
+                                            <div class="card-body text-center">
+                                                <h3 class="card-title">{{elem.title}}</h3>
+                                                <p class="card-text">{{elem.genre}}</p>
+                                                <h5 class="card-title">{{elem.year}}</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
+
+
+
+
     </div>
 
 
