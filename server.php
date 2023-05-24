@@ -48,8 +48,19 @@ $dischi = [
 
 
 
+// $results = [];
 
+// if( isset($POST['discIndex'])){
 
+//   $discIndex = $POST['discIndex'];
+
+//   $singoloDato = $dischi[$discIndex];
+
+//   $results = $singoloDato;
+
+// }else{
+//   $results = $dischi;
+// }
 
 
 
